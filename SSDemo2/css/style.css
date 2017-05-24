@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	position: absolute;
+	top: 15px;
+	left: 45%;
+	text-align: center;
+	display: block;
+}
+
+nav {
+	height: 100px;
+	text-align: center;
+	padding-top: 80px;
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.left {
+	float: left;
+	margin-left: 110px;
+}
+
+.right {
+	float: right;
+	margin-right: 110px;
+}
+
+.wrapper {
+	position: relative;
+	height: 600px;
+}
+
+.slide-img {
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.slide-img1 {
+	background: url(../landscapes/1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.slide-img2 {
+	background: url(../landscapes/2.jpg) no-repeat;
+	background-size: cover;
+}
+
+.slide-img3 {
+	background: url(../landscapes/3.jpg) no-repeat;
+	background-size: cover;
+}
+
+.slide-img4 {
+	background: url(../landscapes/4.jpg) no-repeat;
+	background-size: cover;
+}
+
+.slide-img5 {
+	background: url(../landscapes/5.jpg) no-repeat;
+	background-size: cover;
+}
+
+.slide-img6 {
+	background: url(../landscapes/6.jpg) no-repeat;
+	background-size: cover;
+}
+
+.slide-img7 {
+	background: url(../landscapes/7.jpg) no-repeat;
+	background-size: cover;
+}
+
+.gallery {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.gallery img {
+	width: 300px;
+	height: 300px;
+	border: 2px solid #909090;
+}
+
+footer {
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
