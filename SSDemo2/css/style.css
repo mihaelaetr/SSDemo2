@@ -82,15 +82,54 @@ nav a {
 	background-size: cover;
 }
 
-.gallery {
+.landscapes-gallery, .portraits-gallery {
 	width: 75%;
 	margin: 0 auto;
 }
 
-.gallery img {
+.landscapes-gallery img, .portraits-gallery img {
 	width: 300px;
 	height: 300px;
 	border: 2px solid #909090;
+}
+
+.prl1{
+	background-image: url(../landscapes/4.jpg);
+}
+
+.prl2{
+	background-image: url(../landscapes/5.jpg);
+}
+
+.prl3{
+	background-image: url(../landscapes/7.jpg);
+}
+
+.prl {
+	height: 600px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	transform: scaleY(1.10);
+}
+
+.prl h1 {
+	text-align: center;
+	color: #ffffff;
+	font-size: 70px;
+	text-transform: uppercase;
+	padding-top: 250px;
+}
+
+.container {
+	height: 500px;
+	display: flex;
+	align-items: center;
+}
+
+.container p {
+	font-size: 30px;
+	text-align: center;
 }
 
 footer {
