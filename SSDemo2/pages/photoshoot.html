@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8"/>
+	<meta name="author" content="Mihaela Etropolska"/>
+	<meta name="discription" content="Mihaela Etropolska Photography"/>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="../js/calc.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../index.html" class="logo">
+			<img src="../logo.png"/>
+		</a>
+		<nav>
+			<a href="../index.html" class="left">Home</a>
+			<a href="landscapes.html" class="left">Landscapes</a>
+			<a href="portraits.html" class="left">Portraits</a>
+			<a href="blog.html" class="right">Blog</a>
+			<a href="about.html" class="right">About me</a>
+			<a href="photoshoot.html" class="right">Get a photoshoot</a>
+		</nav>
+	</header>
+	<main>
+		<form action="" id="photoform" onsubmit="return false;">
+			<fieldset>
+				<legend>Customize your photosoot!</legend>
+
+				<label>Number of photos:</label><br/>
+					<input type="radio"  name="selectednumber" value="Photo5" onclick="calculateTotal()" />
+					Photoshoot for 1 hour with 5 photos guaranteed ($20)<br/>
+					<input type="radio"  name="selectednumber" value="Photo10" onclick="calculateTotal()" />
+					Photoshoot for 1 hour with 10 photos guaranteed ($30)<br/>
+					<input type="radio"  name="selectednumber" value="Photo15" onclick="calculateTotal()" />
+					Photoshoot for 2 hours with 15 photos guaranteed ($40)<br/>
+					<input type="radio"  name="selectednumber" value="Photo20" onclick="calculateTotal()" />
+					Photoshoot for 2 hours with 20 photos guaranteed ($50)<br/>
+
+				<label>Choose a city:</label>
+					<select id="city" name='city' onchange="calculateTotal()">
+						<option value="Sofia">Sofia</option>
+						<option value="Plovdiv">Plovdiv($20)</option>
+						<option value="Varna">Varna($35)</option>
+						<option value="Burgas">Burgas($35)</option>
+						<option value="Starazagora">Stara Zagora($30)</option>
+					</select><br/>
+				
+				<p>
+					<label for='secondphotographer'>Second photographer ($35)</label>
+					<input type="checkbox" id="secondphotographer" name='secondphotographer' onclick="calculateTotal()" />
+				</p>
+
+				<p>
+					<label for='extrahour'>Extra 1 hour ($30)</label>
+					<input type="checkbox" id="extrahour" name='extrahour' onclick="calculateTotal()" />
+				</p>
+
+				<p>
+					<label for='studio'>Photoshoot in studio ($50)</label>
+					<input type="checkbox" id="studio" name='studio' onclick="calculateTotal()" />
+				</p>
+
+				<div id="total-price"></div>
+			</fieldset>
+		</form>
+
+		<p class="contact">
+		You can contact me via email:
+		<a href="mailto:mihaela.etropolska@gmail.com" class="email">mihaela.etropolska@gmail.com</a>
+		</p>
+	</main>
+	<footer>
+		<span>&copy Mihaela Etropolska</span>
+	</footer>
+</body>
+</html>

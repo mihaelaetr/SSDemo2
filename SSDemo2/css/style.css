@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
 .logo {
 	position: absolute;
 	top: 15px;
@@ -18,20 +22,21 @@ nav {
 }
 
 nav a {
+	font-size: 30px;
 	color: #000000;
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-.left {
+nav .left {
 	float: left;
-	margin-left: 110px;
+	margin-left: 70px;
 }
 
-.right {
+nav .right {
 	float: right;
-	margin-right: 110px;
+	margin-right: 60px;
 }
 
 .wrapper {
@@ -98,14 +103,15 @@ nav a {
 }
 
 .prl2{
-	background-image: url(../landscapes/5.jpg);
+	background-image: url(../landscapes/3.jpg);
 }
 
 .prl3{
-	background-image: url(../landscapes/7.jpg);
+	background-image: url(../landscapes/1.jpg);
 }
 
 .prl {
+	margin-top: 10px;
 	height: 600px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -132,8 +138,69 @@ nav a {
 	text-align: center;
 }
 
+form {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 25px;
+}
+
+fieldset {
+	padding: 20px;
+}
+
+label {
+	display: inline-block;
+	margin: 7px;
+}
+
+input {
+	margin-bottom: 10px;
+}
+
+#total-price {
+	margin: 25px;
+	font-weight: bold;
+	text-transform: uppercase;	
+}
+
+.contact {
+	margin: 20px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 20px;
+}
+
+.email {
+	text-decoration: none;
+}
+
+#about-me {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.me-img, .about-me-text {
+	display: inline-block;
+	float: left;
+}
+
+.me-img {
+	background-image: url(../me.jpg);
+	width: 630px;
+	height: 600px;
+}
+
+.about-me-text {
+	width: 38%;
+	height: 520px;
+	margin-top: 100px;
+	margin-left: 150px;
+	font-size: 30px;
+}
+
 footer {
 	float: right;
 	margin-top: 10px;
 	margin-right: 20px;
 }
+
