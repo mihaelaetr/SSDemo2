@@ -1,0 +1,119 @@
+.gal-item {
+  display: inline-block;
+  margin: 30px 15px;
+  max-width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.gal-item:before,
+.gal-item:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #868686;
+  opacity: 0.5;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.gal-item:before {
+  transform: skew(30deg) translateX(-80%);
+}
+
+.gal-item:after {
+  transform: skew(-30deg) translateX(-70%);
+}
+
+.gal-item figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 25px 40% 25px 20px;
+}
+
+.gal-item figcaption:before,
+.gal-item figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #868686;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.gal-item figcaption:before {
+  transform: skew(30deg) translateX(-100%);
+}
+
+.gal-item figcaption:after {
+  transform: skew(-30deg) translateX(-90%);
+}
+
+.gal-item h3,
+.gal-item p {
+  opacity: 0;
+}
+
+.gal-item h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gal-item a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.gal-item:hover h3,
+.gal-item.hover h3,
+.gal-item:hover p,
+.gal-item.hover p {
+  transform: translateY(0);
+  opacity: 0.9;
+  transition-delay: 0.2s;
+}
+
+.gal-item:hover:before,
+.gal-item.hover:before {
+  transform: skew(30deg) translateX(-20%);
+  transition-delay: 0.05s;
+}
+
+.gal-item:hover:after,
+.gal-item.hover:after {
+  transform: skew(-30deg) translateX(-10%);
+}
+
+.gal-item:hover figcaption:before,
+.gal-item.hover figcaption:before {
+  transform: skew(30deg) translateX(-40%);
+  transition-delay: 0.15s;
+}
+
+.gal-item:hover figcaption:after,
+.gal-item.hover figcaption:after {
+  transform: skew(-30deg) translateX(-30%);
+  transition-delay: 0.1s;
+}
